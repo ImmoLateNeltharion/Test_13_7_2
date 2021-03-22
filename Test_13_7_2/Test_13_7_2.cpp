@@ -11,7 +11,7 @@ typedef struct
 	int month;
 	int quantity;
 	int codeStr;
-	string monthStr, quantityStr;
+	int monthStr, quantityStr;
 }Details;
 
 
@@ -192,10 +192,10 @@ void LineSearch(vector <Details> array)
 		cin >> key;
 	for (int i = 0; i < array.size(); i++)
 	{
-	//	codeBuff = CutToString(array[i].codeStr, ' ', ';');
+
 		if (arraydFull[i].codeStr == key)
 		{
-			cout << "Code = " << arraydFull[i].codeStr << " " << arraydFull[i].monthStr << " " << arraydFull[i].quantityStr << endl;
+			cout << "Code = " << arraydFull[i].codeStr << " Month = " << arraydFull[i].monthStr << " Quantity = " << arraydFull[i].quantityStr << endl;
 		}
 		}
 }
